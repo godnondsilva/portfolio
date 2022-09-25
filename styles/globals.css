@@ -2,25 +2,21 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #111;
+  color: #eee;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 0.4rem;
 }
 
-* {
-  box-sizing: border-box;
+::-webkit-scrollbar-track {
+  background: #444;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+::-webkit-scrollbar-thumb {
+  background: #888;
 }
