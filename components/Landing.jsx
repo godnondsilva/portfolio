@@ -7,6 +7,7 @@ import {
 	Flex,
 	BottomCaret,
 	Anchor,
+	Mobile,
 } from '../styles/Landing.styles';
 
 import { CaretIcon } from '../styles/Icon.styles';
@@ -19,7 +20,9 @@ const Landing = () => {
 	return (
 		<LandingContainer id='home'>
 			<Fade triggerOnce direction='up' cascade damping={0.2}>
-				<Subtitle>FULL STACK DEVELOPER | OPEN SOURCE ENTHUSIAST</Subtitle>
+				<Subtitle>
+					FULL STACK DEVELOPER | <Mobile>OPEN SOURCE ENTHUSIAST</Mobile>
+				</Subtitle>
 
 				<Title>Hi, I&rsquo;m Godnon Dsilva.</Title>
 				<Description>
@@ -28,7 +31,7 @@ const Landing = () => {
 				</Description>
 				<Flex>
 					<SmoothScroll to='contact' smooth={true}>
-						<Button btype={BUTTON_TYPES.PRIMARY}>Contact Me</Button>
+						<Button btype={BUTTON_TYPES.PRIMARY}>Say Hi</Button>
 					</SmoothScroll>
 					<Anchor href={socials.resume} target='_blank'>
 						<Button btype={BUTTON_TYPES.SECONDARY}>View Resume</Button>

@@ -16,12 +16,18 @@ export const LandingContainer = styled.div`
 export const Subtitle = styled.div`
 	font-size: 1rem;
 	color: #999;
+	@media screen and (max-width: 768px) {
+		font-size: 1rem;
+	}
 `;
 
 export const Title = styled.div`
 	font-size: 3rem;
 	font-weight: 600;
 	padding-bottom: 0.5rem;
+	@media screen and (max-width: 768px) {
+		font-size: 2.1rem;
+	}
 `;
 
 export const Description = styled.div`
@@ -29,6 +35,10 @@ export const Description = styled.div`
 	font-weight: 300;
 	padding-bottom: 1rem;
 	color: #bbb;
+
+	@media screen and (max-width: 768px) {
+		font-size: 1.2rem;
+	}
 `;
 
 export const Anchor = styled.a``;
@@ -43,4 +53,10 @@ export const BottomCaret = styled.div`
 	bottom: 50px;
 	right: 50%;
 	transform: translateX(50%);
+`;
+
+export const Mobile = styled.span`
+	@media screen and (max-width: 768px) {
+		display: block;
+	}
 `;
