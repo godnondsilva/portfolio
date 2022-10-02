@@ -17,9 +17,10 @@ export default function Home() {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<Toaster
+				position='top-right'
 				toastOptions={{
 					style: {
-						backgroundColor: '#444',
+						backgroundColor: '#333',
 						color: '#eee',
 						boxShadow: '0 0 10px rgba(0, 0, 0, 0.25)',
 					},

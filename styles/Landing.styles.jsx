@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const LandingContainer = styled.div`
-	padding-left: 15%;
+	padding: 0 15%;
 	height: 100vh;
 	width: 40%;
 	display: flex;
@@ -9,7 +9,8 @@ export const LandingContainer = styled.div`
 	flex-direction: column;
 
 	@media screen and (max-width: 768px) {
-		width: 70%;
+		padding: 0 10%;
+		width: 80%;
 	}
 `;
 

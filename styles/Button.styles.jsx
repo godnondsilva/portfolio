@@ -25,7 +25,7 @@ export const PrimaryButton = styled.button`
 export const SecondaryButton = styled.button`
 	${DefaultButton}
 	color: #000;
-	background-color: #aaa;
+	background-color: #bbb;
 
 	&:hover {
 		background-color: rgb(255, 255, 255, 0.4);

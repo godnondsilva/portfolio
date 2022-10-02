@@ -9,7 +9,7 @@ import {
 	Title,
 } from '../styles/Contact.styles';
 import Button, { BUTTON_TYPES } from './Button';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import { socials } from '../data/socials';
 import { toast } from 'react-hot-toast';
@@ -109,11 +109,11 @@ const Contact = () => {
 			<Fade triggerOnce direction='up' cascade damping={0.1}>
 				<Title>/ contact me</Title>
 				<Text>
-					Want to discuss a project, an idea, an opportunity? Just fill this
+					Want to discuss a project, an idea, or an opportunity? Just fill this
 					form up or write me an email!
 				</Text>
 			</Fade>
-			<Form onSubmit={submit}>
+			<Form onSubmit={submit} noValidate>
 				<Fade triggerOnce direction='up' cascade damping={0.1}>
 					<Input
 						type='text'

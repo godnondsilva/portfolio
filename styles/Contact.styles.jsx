@@ -1,12 +1,12 @@
 import styled, { css } from 'styled-components';
 
 export const ContactContainer = styled.div`
-	padding: 5rem 0;
-	padding-left: 15%;
+	padding: 5rem 15%;
 	width: 35%;
 
 	@media screen and (max-width: 768px) {
-		width: 70%;
+		padding-left: 10%;
+		width: 80%;
 	}
 `;
 
