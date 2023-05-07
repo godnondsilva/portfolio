@@ -5,7 +5,7 @@ export const ContactContainer = styled.div`
 	width: 35%;
 
 	@media screen and (max-width: 768px) {
-		padding-left: 10%;
+		padding: 5rem 10%;
 		width: 80%;
 	}
 `;
@@ -26,7 +26,7 @@ export const Form = styled.form`
 	display: flex;
 	flex-direction: column;
 	padding-top: 1rem;
-	gap: 1rem;
+	gap: 10px;
 `;
 
 const inputStyles = css`
@@ -35,7 +35,7 @@ const inputStyles = css`
 	font-size: 1.1rem;
 	border: none;
 	min-width: 400px;
-	background-color: #333;
+	background-color: #111;
 	border-bottom: 1px solid
 		${({ value, error }) =>
 			!error
@@ -43,6 +43,7 @@ const inputStyles = css`
 					? 'rgb(89, 139, 248)'
 					: 'transparent'
 				: 'rgb(255, 0, 0)'};
+	border: 1px solid #333;
 	transition: all 0.3s ease-in-out;
 	color: #eee;
 	font-family: Poppins;
@@ -54,7 +55,7 @@ const inputStyles = css`
 	}
 
 	&:hover {
-		background-color: #393939;
+		background-color: #222;
 		border-bottom: 1px solid rgb(89, 139, 248);
 	}
 
@@ -94,7 +95,7 @@ export const TextArea = styled.textarea`
 
 export const ButtonContainer = styled.div`
 	display: flex;
-	gap: 1rem;
+	gap: 10px;
 `;
 
 export const Anchor = styled.a``;

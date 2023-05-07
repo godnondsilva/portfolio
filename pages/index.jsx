@@ -1,12 +1,13 @@
 import Head from 'next/head';
-// import Image from 'next/image'
+import { Toaster } from 'react-hot-toast';
+
+// Components
 import Navigation from '../components/Navigation';
 import Landing from '../components/Landing';
 import About from '../components/About';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
-import { Toaster } from 'react-hot-toast';
 
 export default function Home() {
 	return (

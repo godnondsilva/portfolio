@@ -14,7 +14,7 @@ export const SmallIcon = styled.div`
 export const ProjectIcon = styled.div`
 	font-size: 30px;
 	transition: all 300ms ease 0s;
-	color: rgb(98, 147, 252);
+	color: rgb(89, 139, 248);
 `;
 
 export const SocialIcon = styled.div`

@@ -1,5 +1,38 @@
 import styled from 'styled-components';
 
+export const BackgroundContainer = styled.div`
+	background: rgb(30, 80, 188);
+	background: linear-gradient(
+		205deg,
+		rgba(30, 80, 188, 1) 20%,
+		rgba(0, 0, 0, 1) 50%
+	);
+
+	background-size: 200% 200%;
+	animation: background-gradient 2s ease-in-out infinite;
+	@keyframes background-gradient {
+		100%,
+		0% {
+			background-position: 50% 100%;
+		}
+		50% {
+			background-position: 0% 0%;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		@keyframes background-gradient {
+			100%,
+			0% {
+				background-position: 100% 100%;
+			}
+			50% {
+				background-position: 50% 50%;
+			}
+		}
+	}
+`;
+
 export const LandingContainer = styled.div`
 	padding: 0 15%;
 	height: 100vh;
@@ -17,6 +50,8 @@ export const LandingContainer = styled.div`
 export const Subtitle = styled.div`
 	font-size: 1rem;
 	color: #999;
+	text-transform: uppercase;
+
 	@media screen and (max-width: 768px) {
 		font-size: 1rem;
 	}
@@ -26,6 +61,7 @@ export const Title = styled.div`
 	font-size: 3rem;
 	font-weight: 600;
 	padding-bottom: 0.5rem;
+
 	@media screen and (max-width: 768px) {
 		font-size: 2.1rem;
 	}
@@ -33,9 +69,9 @@ export const Title = styled.div`
 
 export const Description = styled.div`
 	font-size: 1.4rem;
-	font-weight: 300;
+	font-weight: 400;
 	padding-bottom: 1rem;
-	color: #bbb;
+	color: #aaa;
 
 	@media screen and (max-width: 768px) {
 		font-size: 1.2rem;

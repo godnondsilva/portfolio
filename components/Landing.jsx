@@ -8,6 +8,7 @@ import {
 	BottomCaret,
 	Anchor,
 	Mobile,
+	BackgroundContainer,
 } from '../styles/Landing.styles';
 
 import { CaretIcon } from '../styles/Icon.styles';
@@ -18,34 +19,35 @@ import { socials } from '../data/socials';
 
 const Landing = () => {
 	return (
-		<LandingContainer id='home'>
-			<Fade triggerOnce direction='up' cascade damping={0.2}>
-				<Subtitle>
-					FULL STACK DEVELOPER | <Mobile>OPEN SOURCE ENTHUSIAST</Mobile>
-				</Subtitle>
-
-				<Title>Hi, I&rsquo;m Godnon Dsilva.</Title>
-				<Description>
-					I am a fullstack developer from India. I enjoy building everything
-					from small business apps to interactive web apps.
-				</Description>
-				<Flex>
-					<SmoothScroll to='contact' smooth={true}>
-						<Button btype={BUTTON_TYPES.PRIMARY}>Say Hi</Button>
-					</SmoothScroll>
-					<Anchor href={socials.resume} target='_blank'>
-						<Button btype={BUTTON_TYPES.SECONDARY}>View Resume</Button>
-					</Anchor>
-				</Flex>
-			</Fade>
-			<BottomCaret>
-				<Fade triggerOnce direction='up' delay={1000}>
-					<SmoothScroll to='about' smooth={true}>
-						<CaretIcon as={FaCaretDown} />
-					</SmoothScroll>
+		<BackgroundContainer>
+			<LandingContainer id='home'>
+				<Fade triggerOnce direction='up' cascade damping={0.2}>
+					<Subtitle>
+						Software Engineer | <Mobile>Open Source Ethusiast</Mobile>
+					</Subtitle>
+					<Title>Hi, I&rsquo;m Godnon Dsilva.</Title>
+					<Description>
+						I am a software engineer from India. I enjoy building everything
+						from small business apps to interactive web apps.
+					</Description>
+					<Flex>
+						<SmoothScroll to='contact' smooth={true}>
+							<Button btype={BUTTON_TYPES.PRIMARY}>Say Hi</Button>
+						</SmoothScroll>
+						<Anchor href={socials.resume} target='_blank'>
+							<Button btype={BUTTON_TYPES.SECONDARY}>View Resume</Button>
+						</Anchor>
+					</Flex>
 				</Fade>
-			</BottomCaret>
-		</LandingContainer>
+				<BottomCaret>
+					<Fade triggerOnce direction='up' delay={1000}>
+						<SmoothScroll to='about' smooth={true}>
+							<CaretIcon as={FaCaretDown} />
+						</SmoothScroll>
+					</Fade>
+				</BottomCaret>
+			</LandingContainer>
+		</BackgroundContainer>
 	);
 };
 

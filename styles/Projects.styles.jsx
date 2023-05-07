@@ -5,7 +5,7 @@ export const ProjectsContainer = styled.div`
 	width: 60%;
 
 	@media screen and (max-width: 768px) {
-		padding-left: 10%;
+		padding: 5rem 10%;
 		width: 80%;
 	}
 `;

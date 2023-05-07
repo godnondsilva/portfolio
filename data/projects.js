@@ -1,20 +1,20 @@
 export const projects = [
 	{
 		id: 0,
+		title: 'Link Ladder',
+		description:
+			'A customizable micro-landing page creator using React and Express',
+		tags: 'TypeScript, React, Express, Prisma, MongoDB',
+		github: 'https://github.com/godnondsilva/linkladder',
+		visit: 'https://linkladder.vercel.app',
+	},
+	{
+		id: 1,
 		title: 'Revolt Fashion',
 		description: 'An E-commerce fashion store using React and Firebase.',
 		tags: 'TypeScript, React, Firebase, Redux, Stripe',
 		github: 'https://github.com/godnondsilva/revolt-fashion',
 		visit: 'https://revoltfashion.netlify.app',
-	},
-	{
-		id: 1,
-		title: 'LinkMe',
-		description:
-			'A customizable micro-landing page creator using React and Flask',
-		tags: 'JavaScript, React, Flask, PostgreSQL',
-		github: 'https://github.com/godnondsilva/linkme',
-		visit: '',
 	},
 	{
 		id: 2,

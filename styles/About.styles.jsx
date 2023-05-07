@@ -5,7 +5,7 @@ export const AboutContainer = styled.div`
 	width: 60%;
 
 	@media screen and (max-width: 768px) {
-		padding-left: 10%;
+		padding: 5rem 10%;
 		width: 80%;
 	}
 `;
@@ -17,6 +17,7 @@ export const Title = styled.div`
 `;
 
 export const TextContainer = styled.div`
+	font-weight: 400;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -26,6 +27,10 @@ export const Text = styled.div`
 	font-size: 1.2rem;
 	font-weight: 300;
 	color: #bbb;
+
+	@media screen and (max-width: 768px) {
+		font-size: 1.1rem;
+	}
 `;
 
 export const Blue = styled.span`
@@ -45,4 +50,8 @@ export const Item = styled.li`
 	font-size: 1.2rem;
 	font-weight: 300;
 	color: #bbb;
+
+	@media screen and (max-width: 768px) {
+		font-size: 1.1rem;
+	}
 `;

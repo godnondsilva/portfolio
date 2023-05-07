@@ -4,13 +4,13 @@ export const CardContainer = styled.div`
 	max-width: 300px;
 	height: 220px;
 	padding: 2rem;
-	background-color: #333;
+	border: 1px solid #333;
+	background-color: #111;
 	transition: all 0.3s ease-in-out;
 	border-radius: 2px;
 
 	&:hover {
-		background-color: #393939;
-		translate: 0 -10px;
+		background-color: #222;
 	}
 `;
 
