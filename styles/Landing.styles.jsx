@@ -9,10 +9,10 @@ export const BackgroundContainer = styled.div`
 	);
 
 	background-size: 200% 200%;
-	animation: background-gradient 2s ease-in-out infinite;
+	animation: background-gradient 3s ease-in-out infinite;
 	@keyframes background-gradient {
-		100%,
-		0% {
+		0%,
+		100% {
 			background-position: 50% 100%;
 		}
 		50% {
