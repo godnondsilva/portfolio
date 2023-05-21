@@ -36,14 +36,17 @@ const inputStyles = css`
 	border: none;
 	min-width: 400px;
 	background-color: #111;
-	border-bottom: 1px solid
-		${({ value, error }) =>
-			!error
-				? value.length
-					? 'rgb(89, 139, 248)'
-					: 'transparent'
-				: 'rgb(255, 0, 0)'};
 	border: 1px solid #333;
+	border-bottom: 1px solid
+		${({ value, error }) => {
+			const err = error === 'true' ? true : false;
+			if (!err) {
+				return value.length > 0 ? 'rgb(89, 139, 248)' : 'transparent';
+			} else {
+				return 'rgb(255, 0, 0)';
+			}
+		}};
+
 	transition: all 0.3s ease-in-out;
 	color: #eee;
 	font-family: Poppins;

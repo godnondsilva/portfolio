@@ -5,8 +5,8 @@ export const projects = [
 		description:
 			'A customizable micro-landing page creator using React and Express',
 		tags: 'TypeScript, React, Express, Prisma, MongoDB',
-		github: 'https://github.com/godnondsilva/linkladder',
-		visit: 'https://linkladder.vercel.app',
+		github: 'https://github.com/godnondsilva/link-ladder',
+		visit: '',
 	},
 	{
 		id: 1,

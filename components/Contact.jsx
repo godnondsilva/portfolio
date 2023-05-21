@@ -54,7 +54,7 @@ const Contact = () => {
 				...errors,
 				name: true,
 			});
-			return toast.error('Please enter a valid name');
+			return toast.error('Please enter a valid name (Minimum 2 characters)');
 		}
 		if (!validateEmail(formData.email)) {
 			setErrors({
@@ -68,14 +68,14 @@ const Contact = () => {
 				...errors,
 				subject: true,
 			});
-			return toast.error('Please enter a subject');
+			return toast.error('Please enter a subject (Minimum 4 characters)');
 		}
 		if (!validateMessage(formData.message)) {
 			setErrors({
 				...errors,
 				message: true,
 			});
-			return toast.error('Please enter a message');
+			return toast.error('Please enter a message (Minimum 4 characters)');
 		}
 
 		toast.promise(
@@ -119,7 +119,7 @@ const Contact = () => {
 						type='text'
 						name='name'
 						value={formData.name}
-						error={errors.name}
+						error={errors.name.toString()}
 						onChange={handleChange}
 						placeholder='Enter your name'
 					/>
@@ -127,7 +127,7 @@ const Contact = () => {
 						type='email'
 						name='email'
 						value={formData.email}
-						error={errors.email}
+						error={errors.email.toString()}
 						onChange={handleChange}
 						placeholder='Enter your email'
 					/>
@@ -135,14 +135,14 @@ const Contact = () => {
 						type='text'
 						name='subject'
 						value={formData.subject}
-						error={errors.subject}
+						error={errors.subject.toString()}
 						onChange={handleChange}
 						placeholder='Enter a subject'
 					/>
 					<TextArea
 						name='message'
 						value={formData.message}
-						error={errors.message}
+						error={errors.message.toString()}
 						onChange={handleChange}
 						placeholder='Enter a message'
 					/>
