@@ -41,7 +41,7 @@ const inputStyles = css<{ value: string; error: string }>`
 		${({ value, error }) => {
 			const err = error === 'true' ? true : false;
 			if (!err) {
-				return value.length > 0 ? 'rgb(89, 139, 248)' : 'transparent';
+				return value.length > 0 ? 'rgb(89, 139, 248)' : '#333';
 			} else {
 				return 'rgb(255, 0, 0)';
 			}
