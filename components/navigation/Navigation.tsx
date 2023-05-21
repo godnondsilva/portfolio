@@ -16,29 +16,29 @@ const Navigation = () => {
 		<NavContainer>
 			<NavItems>
 				<Fade triggerOnce direction='up' cascade damping={0.2}>
-					<SmoothScroll to='home' smooth={true}>
+					<SmoothScroll href='/' to='home' smooth={true}>
 						<NavItem>/home</NavItem>
 					</SmoothScroll>
-					<SmoothScroll to='about' smooth={true}>
+					<SmoothScroll href='/about' to='about' smooth={true}>
 						<NavItem>/about</NavItem>
 					</SmoothScroll>
-					<SmoothScroll to='projects' smooth={true}>
+					<SmoothScroll href='/projects' to='projects' smooth={true}>
 						<NavItem>/projects</NavItem>
 					</SmoothScroll>
-					<SmoothScroll to='contact' smooth={true}>
+					<SmoothScroll href='/contact' to='contact' smooth={true}>
 						<NavItem>/contact</NavItem>
 					</SmoothScroll>
 				</Fade>
 			</NavItems>
 			<Fade triggerOnce direction='up' delay={1000}>
 				<Icons>
-					<Anchor href={socials.mail}>
+					<Anchor href={socials.mail} aria-label='Godnon Dsilva Mail'>
 						<SmallIcon as={FaEnvelope} />
 					</Anchor>
-					<Anchor href={socials.github}>
+					<Anchor href={socials.github} aria-label='Godnon Dsilva GitHub'>
 						<SmallIcon as={FaGithub} />
 					</Anchor>
-					<Anchor href={socials.linkedin}>
+					<Anchor href={socials.linkedin} aria-label='Godnon Dsilva LinkedIn'>
 						<SmallIcon as={FaLinkedin} />
 					</Anchor>
 				</Icons>

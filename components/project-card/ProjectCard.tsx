@@ -25,12 +25,22 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 				</LinkSection>
 				<LinkSection>
 					{github.length ? (
-						<Anchor href={github} target='_blank' rel='noreferrer'>
+						<Anchor
+							href={github}
+							target='_blank'
+							rel='noreferrer'
+							aria-label={title}
+						>
 							<SocialIcon as={FaGithub} />
 						</Anchor>
 					) : null}
 					{visit.length ? (
-						<Anchor href={visit} target='_blank' rel='noreferrer'>
+						<Anchor
+							href={visit}
+							target='_blank'
+							rel='noreferrer'
+							aria-label={title}
+						>
 							<SocialIcon as={FaExternalLinkAlt} />
 						</Anchor>
 					) : null}

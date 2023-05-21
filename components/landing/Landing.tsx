@@ -32,7 +32,7 @@ const Landing = () => {
 						from small business apps to interactive web apps.
 					</Description>
 					<Flex>
-						<SmoothScroll to='contact' smooth={true}>
+						<SmoothScroll href='/' to='contact' smooth={true}>
 							<Button bType={ButtonType.Primary}>Say Hi</Button>
 						</SmoothScroll>
 						<Anchor href={socials.resume} target='_blank'>
@@ -42,7 +42,12 @@ const Landing = () => {
 				</Fade>
 				<BottomCaret>
 					<Fade triggerOnce direction='up' delay={1000}>
-						<SmoothScroll to='about' smooth={true}>
+						<SmoothScroll
+							aria-label='Godnon Dsilva Learn More'
+							href='/'
+							to='about'
+							smooth={true}
+						>
 							<CaretIcon as={FaCaretDown} />
 						</SmoothScroll>
 					</Fade>

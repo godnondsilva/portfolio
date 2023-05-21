@@ -11,7 +11,7 @@ import Footer from '../components/footer/Footer';
 
 export default function Home() {
 	return (
-		<div>
+		<>
 			<Head>
 				<title>Godnon Dsilva | Portfolio</title>
 				<meta name='description' content='Portfolio by Godnon Dsilva' />
@@ -33,6 +33,6 @@ export default function Home() {
 			<Projects />
 			<Contact />
 			<Footer />
-		</div>
+		</>
 	);
 }
