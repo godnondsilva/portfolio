@@ -8,7 +8,7 @@ import {
 	ItemsContainer,
 	Items,
 	Item,
-} from '../styles/About.styles';
+} from './About.styles';
 
 const About = () => {
 	return (

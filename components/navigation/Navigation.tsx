@@ -5,11 +5,11 @@ import {
 	NavItem,
 	Icons,
 	Anchor,
-} from '../styles/Navigation.styles';
-import { SmallIcon } from '../styles/Icon.styles';
+} from './Navigation.styles';
+import { SmallIcon } from '../../styles/Icon.styles';
 import { Link as SmoothScroll } from 'react-scroll';
 import { Fade } from 'react-awesome-reveal';
-import { socials } from '../data/socials';
+import { socials } from '../../data/socials';
 
 const Navigation = () => {
 	return (

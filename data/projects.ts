@@ -1,4 +1,6 @@
-export const projects = [
+import { Project } from '../types';
+
+export const projects: Project[] = [
 	{
 		id: 0,
 		title: 'Link Ladder',
@@ -49,6 +51,6 @@ export const projects = [
 			'An API demonstration project with Deno, Oak, Docker and Typescript',
 		tags: 'TypeScript, Docker, Deno, Oak, APIs',
 		github: 'https://github.com/godnondsilva/galaxy-center',
-		visit: 'https://galaxy-center.herokuapp.com/index.html',
+		visit: '',
 	},
 ];

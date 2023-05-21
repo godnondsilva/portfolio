@@ -19,10 +19,15 @@
     "react-hot-toast": "^2.4.1",
     "react-icons": "^4.8.0",
     "react-scroll": "^1.8.9",
-    "styled-components": "^6.0.0-rc.1"
+    "styled-components": "^5.3.10"
   },
   "devDependencies": {
+    "@types/node": "20.2.1",
+    "@types/react": "18.2.6",
+    "@types/react-scroll": "^1.8.7",
+    "@types/styled-components": "^5.1.26",
     "eslint": "8.41.0",
-    "eslint-config-next": "13.4.3"
+    "eslint-config-next": "13.4.3",
+    "typescript": "5.0.4"
   }
 }

@@ -7,18 +7,19 @@ import {
 	Text,
 	TextArea,
 	Title,
-} from '../styles/Contact.styles';
-import Button, { BUTTON_TYPES } from './Button';
+} from './Contact.styles';
+import Button from '../button/Button';
 import { useState } from 'react';
 import { Fade } from 'react-awesome-reveal';
-import { socials } from '../data/socials';
+import { socials } from '../../data/socials';
 import { toast } from 'react-hot-toast';
 import {
 	validateEmail,
 	validateMessage,
 	validateName,
 	validateSubject,
-} from '../utils/validation';
+} from '../../utils/validation';
+import { ButtonType } from '../../types/enum';
 
 const Contact = () => {
 	const [formData, setFormData] = useState({
@@ -35,7 +36,11 @@ const Contact = () => {
 		message: false,
 	});
 
-	const handleChange = (e) => {
+	const handleChange = (
+		e:
+			| React.ChangeEvent<HTMLInputElement>
+			| React.ChangeEvent<HTMLTextAreaElement>,
+	) => {
 		const { name, value } = e.target;
 		setErrors({
 			...errors,
@@ -47,7 +52,7 @@ const Contact = () => {
 		});
 	};
 
-	const submit = (e) => {
+	const submit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		if (!validateName(formData.name)) {
 			setErrors({
@@ -147,11 +152,11 @@ const Contact = () => {
 						placeholder='Enter a message'
 					/>
 					<ButtonContainer>
-						<Button type='submit' btype={BUTTON_TYPES.PRIMARY}>
+						<Button type='submit' bType={ButtonType.Primary}>
 							Send
 						</Button>
 						<Anchor href={socials.mail}>
-							<Button type='button' btype={BUTTON_TYPES.SECONDARY}>
+							<Button type='button' bType={ButtonType.Secondary}>
 								Send via mail
 							</Button>
 						</Anchor>

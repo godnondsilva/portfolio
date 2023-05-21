@@ -1,5 +1,5 @@
 import { Fade } from 'react-awesome-reveal';
-import { FooterContainer, Text } from '../styles/Footer.styles';
+import { FooterContainer, Text } from './Footer.styles';
 
 const Footer = () => {
 	return (

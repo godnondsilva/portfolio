@@ -2,9 +2,9 @@ import {
 	ProjectsCardContainer,
 	ProjectsContainer,
 	Title,
-} from '../styles/Projects.styles';
-import { projects } from '../data/projects.js';
-import ProjectCard from './ProjectCard';
+} from './Projects.styles';
+import { projects } from '../../data/projects';
+import ProjectCard from '../project-card/ProjectCard';
 import { Fade } from 'react-awesome-reveal';
 
 const Projects = () => {

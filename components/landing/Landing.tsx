@@ -9,13 +9,14 @@ import {
 	Anchor,
 	Mobile,
 	BackgroundContainer,
-} from '../styles/Landing.styles';
+} from './Landing.styles';
 
-import { CaretIcon } from '../styles/Icon.styles';
-import Button, { BUTTON_TYPES } from './Button';
+import { CaretIcon } from '../../styles/Icon.styles';
+import Button from '../button/Button';
 import { Link as SmoothScroll } from 'react-scroll';
 import { Fade } from 'react-awesome-reveal';
-import { socials } from '../data/socials';
+import { socials } from '../../data/socials';
+import { ButtonType } from '../../types/enum';
 
 const Landing = () => {
 	return (
@@ -32,10 +33,10 @@ const Landing = () => {
 					</Description>
 					<Flex>
 						<SmoothScroll to='contact' smooth={true}>
-							<Button btype={BUTTON_TYPES.PRIMARY}>Say Hi</Button>
+							<Button bType={ButtonType.Primary}>Say Hi</Button>
 						</SmoothScroll>
 						<Anchor href={socials.resume} target='_blank'>
-							<Button btype={BUTTON_TYPES.SECONDARY}>View Resume</Button>
+							<Button bType={ButtonType.Secondary}>View Resume</Button>
 						</Anchor>
 					</Flex>
 				</Fade>

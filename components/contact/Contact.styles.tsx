@@ -29,7 +29,7 @@ export const Form = styled.form`
 	gap: 10px;
 `;
 
-const inputStyles = css`
+const inputStyles = css<{ value: string; error: string }>`
 	align-self: flex-start;
 	padding: 1rem;
 	font-size: 1.1rem;

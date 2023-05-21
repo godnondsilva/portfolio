@@ -2,12 +2,12 @@ import Head from 'next/head';
 import { Toaster } from 'react-hot-toast';
 
 // Components
-import Navigation from '../components/Navigation';
-import Landing from '../components/Landing';
-import About from '../components/About';
-import Projects from '../components/Projects';
-import Contact from '../components/Contact';
-import Footer from '../components/Footer';
+import Navigation from '../components/navigation/Navigation';
+import Landing from '../components/landing/Landing';
+import About from '../components/about/About';
+import Projects from '../components/projects/Projects';
+import Contact from '../components/contact/Contact';
+import Footer from '../components/footer/Footer';
 
 export default function Home() {
 	return (

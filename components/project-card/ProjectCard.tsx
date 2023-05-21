@@ -1,6 +1,5 @@
 import { FaExternalLinkAlt, FaGithub, FaInbox } from 'react-icons/fa';
-import { SiTypescript } from 'react-icons/si';
-import { ProjectIcon, SocialIcon } from '../styles/Icon.styles';
+import { ProjectIcon, SocialIcon } from '../../styles/Icon.styles';
 import {
 	Anchor,
 	CardContainer,
@@ -9,9 +8,14 @@ import {
 	LinkSection,
 	Tags,
 	Title,
-} from '../styles/ProjectCard.styles';
+} from './ProjectCard.styles';
+import { Project } from '../../types';
 
-const ProjectCard = ({ project }) => {
+type ProjectCardProps = {
+	project: Project;
+};
+
+const ProjectCard = ({ project }: ProjectCardProps) => {
 	const { title, description, tags, github, visit } = project;
 	return (
 		<CardContainer>
