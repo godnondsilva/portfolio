@@ -5,5 +5,5 @@ export const socials: Socials = {
 	linkedin: 'https://www.linkedin.com/in/godnon-dsilva/',
 	mail: 'mailto:godnondsilva@gmail.com',
 	resume:
-		'https://drive.google.com/drive/folders/1D0s8Hv3yQwSv1n_ucxLXFVsdBiC_8PyQ?usp=sharing',
+		'https://drive.google.com/file/d/1e7766W-w0MHSKUef2z9vqaYxqXxLGqqJ/view?usp=sharing',
 };
