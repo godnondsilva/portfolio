@@ -19,8 +19,8 @@ const About = () => {
 			<TextContainer>
 				<Fade triggerOnce direction='up' cascade damping={0.2}>
 					<Text>
-						Hello! I&#39;m <Blue>Godnon Dsilva</Blue>, a student studying
-						Computer Science & Engineering in Mangalore, India.
+						Hello! I&#39;m <Blue>Godnon Dsilva</Blue>, a software engineer based
+						in Mangalore, India.
 					</Text>
 					<Text>
 						I enjoy creating things that live on the internet, whether that

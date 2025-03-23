@@ -39,7 +39,7 @@ const inputStyles = css<{ value: string; error: string }>`
 	border: 1px solid #333;
 	border-bottom: 1px solid
 		${({ value, error }) => {
-			const err = error === 'true' ? true : false;
+			const err = error === 'true';
 			if (!err) {
 				return value.length > 0 ? 'rgb(89, 139, 248)' : '#333';
 			} else {
@@ -49,7 +49,6 @@ const inputStyles = css<{ value: string; error: string }>`
 
 	transition: all 0.3s ease-in-out;
 	color: #eee;
-	font-family: Poppins;
 	border-radius: 2px;
 
 	&::placeholder {
