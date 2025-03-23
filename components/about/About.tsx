@@ -36,7 +36,9 @@ const About = () => {
 				<ItemsContainer>
 					<Fade triggerOnce direction='up' cascade damping={0.2}>
 						<Items>
-							<Item>JavaScript</Item>
+							<Item>
+								<Blue>JavaScript</Blue>
+							</Item>
 							<Item>React</Item>
 							<Item>Next.js</Item>
 						</Items>
@@ -44,12 +46,12 @@ const About = () => {
 							<Item>
 								<Blue>TypeScript</Blue>
 							</Item>
-							<Item>Python</Item>
-							<Item>Flask</Item>
+							<Item>Angular</Item>
+							<Item>Vue.js</Item>
 						</Items>
 						<Items>
-							<Item>PostgreSQL</Item>
-							<Item>MySQL</Item>
+							<Item>Python</Item>
+							<Item>Flask</Item>
 							<Item>Firebase</Item>
 						</Items>
 					</Fade>
