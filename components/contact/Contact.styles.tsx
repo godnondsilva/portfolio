@@ -91,8 +91,13 @@ export const Input = styled.input`
 
 export const TextArea = styled.textarea`
 	${inputStyles}
-
+	font-family: inherit;
 	resize: none;
+	::placeholder {
+		color: #999;
+		font-size: 1.1rem;
+		font-weight: 400;
+	}
 `;
 
 export const ButtonContainer = styled.div`
